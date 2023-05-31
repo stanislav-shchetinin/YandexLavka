@@ -1,0 +1,8 @@
+fetch(
+'/couriers',
+{
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ name: 'rfr', id: 101, area: 100, modeOfTransport: 'CAR', workSchedule: ['09:20-10:20', '09:10-09:11'] })
+}
+).then(result => result.json().then(console.log))

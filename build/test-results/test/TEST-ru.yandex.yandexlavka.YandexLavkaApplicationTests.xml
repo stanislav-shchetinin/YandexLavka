@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.yandex.yandexlavka.YandexLavkaApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-15T16:23:19" hostname="STAS" time="0.18">
+  <properties/>
+  <testcase name="contextLoads()" classname="ru.yandex.yandexlavka.YandexLavkaApplicationTests" time="0.18"/>
+  <system-out><![CDATA[19:23:13.663 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [YandexLavkaApplicationTests]: using SpringBootContextLoader
+19:23:13.671 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [ru.yandex.yandexlavka.YandexLavkaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:23:13.673 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.yandex.yandexlavka.YandexLavkaApplicationTests]: YandexLavkaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:23:13.707 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [YandexLavkaApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+19:23:13.807 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\ШБР\17915-stanislavschetinin-113\build\classes\java\main\ru\yandex\yandexlavka\YandexLavkaApplication.class]
+19:23:13.809 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.yandex.yandexlavka.YandexLavkaApplication for test class ru.yandex.yandexlavka.YandexLavkaApplicationTests
+19:23:13.970 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [YandexLavkaApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:23:13.976 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [YandexLavkaApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-05-15T19:23:14.372+03:00  INFO 1040 --- [    Test worker] r.y.y.YandexLavkaApplicationTests        : Starting YandexLavkaApplicationTests using Java 17.0.4.1 with PID 1040 (started by stass in C:\ШБР\17915-stanislavschetinin-113)
+2023-05-15T19:23:14.374+03:00  INFO 1040 --- [    Test worker] r.y.y.YandexLavkaApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-05-15T19:23:15.513+03:00  INFO 1040 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-15T19:23:15.626+03:00  INFO 1040 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 3 JPA repository interfaces.
+2023-05-15T19:23:16.359+03:00  INFO 1040 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-15T19:23:16.679+03:00  INFO 1040 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36f6e521
+2023-05-15T19:23:16.681+03:00  INFO 1040 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-15T19:23:16.779+03:00  INFO 1040 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-15T19:23:16.857+03:00  INFO 1040 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-15T19:23:17.593+03:00  INFO 1040 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-15T19:23:18.547+03:00  INFO 1040 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-15T19:23:18.556+03:00  INFO 1040 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-15T19:23:19.092+03:00  WARN 1040 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-15T19:23:19.503+03:00  INFO 1040 --- [    Test worker] r.y.y.YandexLavkaApplicationTests        : Started YandexLavkaApplicationTests in 5.468 seconds (process running for 6.968)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

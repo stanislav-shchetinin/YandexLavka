@@ -1,0 +1,8 @@
+fetch(
+'/orders',
+{
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ area: 2, workSchedule: ['13:20-15:20'], price: 200, weight: 15 })
+}
+).then(result => result.json().then(console.log))

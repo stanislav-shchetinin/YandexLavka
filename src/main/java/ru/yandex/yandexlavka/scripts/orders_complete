@@ -1,0 +1,8 @@
+fetch(
+'/orders/complete',
+{
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ id: 102, courierId: 1452, time: '03:20', date: '2007-10-10' })
+}
+).then(result => result.json().then(console.log))
